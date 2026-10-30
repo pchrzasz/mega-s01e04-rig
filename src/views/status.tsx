@@ -30,7 +30,7 @@ export function StatusBoard({ status }: { status: Status }) {
                 {' · fail '}{counts?.fail ?? '—'}
               </li>
             );
-          ))}
+          })}
         </ul>
       )}
     </>
