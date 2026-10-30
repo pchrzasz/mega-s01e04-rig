@@ -30,7 +30,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
 
       - name: Install dependencies
         run: corepack pnpm install --frozen-lockfile
@@ -40,13 +39,13 @@ jobs:
         env:
           LANE_MARKER: ${{ secrets.LANE_MARKER }}
           PORT: 8787
-        run: pnpm start > /tmp/rig.log 2>&1 &
+        run: corepack pnpm start > /tmp/rig.log 2>&1 &
 
       - name: Start rig without lane marker
         if: ${{ !inputs.include_marker }}
         env:
           PORT: 8787
-        run: env -u LANE_MARKER pnpm start > /tmp/rig.log 2>&1 &
+        run: env -u LANE_MARKER corepack pnpm start > /tmp/rig.log 2>&1 &
 
       - name: Wait for rig and save digest
         run: |
