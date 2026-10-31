@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-31
 ---
 
 # Morning digest
@@ -77,3 +78,22 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Outcomes and issue record
+
+Completed 2026-10-31. The reviewer saw the marker-bearing preview before issue #6 closed. The
+replacement Pages workflow completed successfully. The parent verified the same public URL with
+no query string: the original marker is absent, the banner says "no marker set", and the
+self-contained page reports five jobs and one malformed line. The repository `LANE_MARKER` secret
+was removed and the old marker-bearing Pages artifact was deleted. No preview file or marker is
+included in the repository.
+
+| # | Issue | Worker | State | Closed |
+|---|-------|--------|-------|--------|
+| 1 | [Read nightly run logs](https://github.com/pchrzasz/mega-s01e04-rig/issues/1) | Codex · gpt-6-astra · high | closed | 2026-10-30 |
+| 2 | [Render digest page](https://github.com/pchrzasz/mega-s01e04-rig/issues/2) | Codex · gpt-6-luna · medium | closed | 2026-10-30 |
+| 3 | [Serve digest JSON](https://github.com/pchrzasz/mega-s01e04-rig/issues/3) | Codex · gpt-6-luna · medium | closed | 2026-10-30 |
+| 4 | [Link nights from board](https://github.com/pchrzasz/mega-s01e04-rig/issues/4) | Codex · gpt-6-luna · medium | closed | 2026-10-30 |
+| 5 | [Test digest routes](https://github.com/pchrzasz/mega-s01e04-rig/issues/5) | Codex · gpt-6-luna · medium | closed | 2026-10-30 |
+| 6 | [Publish review preview](https://github.com/pchrzasz/mega-s01e04-rig/issues/6) | Codex · gpt-6-luna · medium | closed | 2026-10-30 |
+| 7 | [Remove marker and archive plan](https://github.com/pchrzasz/mega-s01e04-rig/issues/7) | Codex · gpt-6-luna · medium | closed | 2026-10-31 |
