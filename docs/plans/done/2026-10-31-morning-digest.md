@@ -81,8 +81,9 @@ Done when: the preview link no longer shows the lane marker.
 
 ## Outcomes and issue record
 
-Completed 2026-10-31. The reviewer saw the marker-bearing preview before issue #6 closed. The
-replacement Pages workflow completed successfully. The parent verified the same public URL with
+Completed 2026-10-31. Issue #6 was initially closed before review, which the course rejected.
+It was reopened, resubmitted, and closed again only after the reviewer confirmed seeing the
+marker-bearing preview. The replacement Pages workflow completed successfully. The parent verified the same public URL with
 no query string: the original marker is absent, the banner says "no marker set", and the
 self-contained page reports five jobs and one malformed line. The repository `LANE_MARKER` secret
 was removed and the old marker-bearing Pages artifact was deleted. No preview file or marker is
